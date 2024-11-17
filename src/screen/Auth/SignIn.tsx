@@ -6,6 +6,7 @@ import {
 } from "../../components/ScreenRoot/ScreenRoot";
 import { navigate } from "../../navigation/utils";
 import { Routes } from "../../navigation/routes";
+import { Loader } from "../../components/Loader/Loader";
 
 export const SignIn: React.FC = () => {
   return (

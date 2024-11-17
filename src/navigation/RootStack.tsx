@@ -6,20 +6,21 @@ import { navigationRef } from "./utils";
 import { RootParamList } from "./RootParamsList";
 
 import { useSelector } from "react-redux";
-// import { selectInitialRouteNameForUser } from "../screen/Auth/authRedux";
+
 import { Routes } from "./routes";
 import { SignIn } from "../screen/Auth/SignIn";
 import { SignUp } from "../screen/Auth/SingUp";
 import { Home } from "../screen/Home/Home";
+import { selectInitialRouteNameForUser } from "../screen/Auth/redux/authSlice";
 
 const Stack = createStackNavigator<RootParamList>();
 
 export const RootStack = () => {
-  // const initialRouteName = useSelector(selectInitialRouteNameForUser);
+  const initialRouteName = useSelector(selectInitialRouteNameForUser);
 
   return (
     <NavigationContainer ref={navigationRef}>
-      <Stack.Navigator initialRouteName={Routes.signIn}>
+      <Stack.Navigator initialRouteName={initialRouteName}>
         <Stack.Screen
           name={Routes.home}
           component={Home}

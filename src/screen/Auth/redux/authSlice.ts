@@ -2,7 +2,6 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { UserObject, UserState } from "./authSlice.props";
 import {
   createUserWithEmailAndPassword,
-  getIdToken,
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../../../../firebase";

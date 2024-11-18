@@ -5,6 +5,7 @@ export interface UserObject {
 
 export interface UserState {
   loading: boolean;
+  userSignUpLoading: boolean;
   email: string | null;
   user: UserObject | any;
   error: string | null;

@@ -10,5 +10,12 @@ export const Loader = () => {
 };
 
 export const ButtonLoader = () => {
-  return <ActivityIndicator size={"small"} animating color={"red"} />;
+  return (
+    <ActivityIndicator
+      size={"small"}
+      style={LoaderStyle.buttonLoader}
+      animating
+      color={"White"}
+    />
+  );
 };

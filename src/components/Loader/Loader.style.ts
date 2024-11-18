@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { themeSpacing } from "../../ui-kit/thems/spacer";
 
 export const LoaderStyle = StyleSheet.create({
   loaderLoacation: {
@@ -6,5 +7,8 @@ export const LoaderStyle = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
+  },
+  buttonLoader: {
+    marginTop: themeSpacing(1),
   },
 });
